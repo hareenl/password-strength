@@ -129,3 +129,12 @@ document.getElementById("password").addEventListener("input", function () {
   updateStrengthBar(result.entropy);
   updateDetails(result.letterCount, result.digitCount, result.specialCount, result.totalLength, result.poolSize);
 });
+
+/* ------- Dark Mode Toggle ------- */
+
+const darkModeButton = document.getElementById('dark-mode-toggle');
+
+darkModeButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  document.querySelector('.container').classList.toggle('dark-mode');
+});
