@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Title -->
+    <h1>Password Strength</h1>
+
+    <!-- Password Entry Box -->
+    <input type="password" id="password" placeholder="Enter or generate a password" />
+
+    <!-- Show Password Checkbox, centered -->
+    <div class="show-password-container">
+      <label class="show-hide">
+        <input type="checkbox" id="toggle-password"> Show Password
+      </label>
+    </div>
+
+    <!-- Password Entropy and Strength Details -->
+    <div id="entropy">Entropy: <span id="entropy-value">N/A</span></div>
+    <div id="strength">Strength: <span id="strength-value">N/A</span></div>
+
+    <!-- Password Strength Bar -->
+    <div class="strength-bar">
+      <div id="strength-bar-inner"></div>
+    </div>
+
+    <!-- Password Generator Section -->
+    <div class="generator">
+      <div class="generator-row">
+        <label for="length">Length: </label>
+        <input type="number" id="length" min="1" value="12">
+      </div>
+
+      <!-- Options Checkboxes Row -->
+      <div class="generator-row">
+        <label><input type="checkbox" id="use-lowercase" checked> a-z</label>
+        <label><input type="checkbox" id="use-uppercase" checked> A-Z</label>
+        <label><input type="checkbox" id="use-digits" checked> 0-9</label>
+        <label><input type="checkbox" id="use-special" checked> !@#$%</label>
+        <label><input type="checkbox" id="use-ambiguous" checked> {}[]...</label>
+      </div>
+
+      <!-- Generate Button Row -->
+      <div class="generator-row">
+        <button id="generate">Generate</button>
+      </div>
+    </div>
+
+    <div id="details">
+      <h3>Character Breakdown</h3>
+      <p>Letters: <span id="letter-count">0</span></p>
+      <p>Digits: <span id="digit-count">0</span></p>
+      <p>Special characters: <span id="special-count">0</span></p>
+      <p>Total length: <span id="password-length">0</span></p>
+      <h3>Entropy Details</h3>
+      <p>Character set size: <span id="char-pool-size">0</span></p>
+    </div>
+  </div>
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="dark-mode-toggle" class="dark-mode-toggle">🌙</button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
