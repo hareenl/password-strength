@@ -7,7 +7,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -16,13 +15,6 @@ body {
   background-color: #fff;
   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* Title reduced */
-h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
 }
 
 input {
@@ -60,7 +52,7 @@ input {
   font-weight: bold;
 }
 
-/* Strength Bar */
+/* The Strength Bar */
 .strength-bar {
   width: 100%;
   height: 10px;
@@ -119,57 +111,4 @@ button:hover {
 #details h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-}
-
-/* ---- Dark Mode Toggle Button ---- */
-.dark-mode-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: #f4f4f9;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.dark-mode-toggle:hover {
-  transform: scale(1.1);
-}
-
-/* ---- Dark Mode Styles ---- */
-body.dark-mode {
-  background-color: #121212;
-  color: #e4e4e4;
-}
-
-.container.dark-mode {
-  background-color: #1d1d1d;
-  color: #e4e4e4;
-}
-
-input.dark-mode {
-  background-color: #2a2a2a;
-  border: 1px solid #555;
-  color: #e4e4e4;
-}
-
-button.dark-mode {
-  background-color: #444;
-  color: #e4e4e4;
-}
-
-#strength-bar-inner.dark-mode {
-  background-color: teal;
-}
-
-.dark-mode-toggle.dark-mode {
-  background-color: #333;
 }
