@@ -82,6 +82,7 @@ function generatePassword(options) {
 }
 
 /* ------- Event Handlers ------- */
+
 // Password visibility toggle
 document.getElementById('toggle-password').addEventListener('change', function () {
   const passwordInput = document.getElementById('password');
@@ -127,18 +128,4 @@ document.getElementById("password").addEventListener("input", function () {
 
   updateStrengthBar(result.entropy);
   updateDetails(result.letterCount, result.digitCount, result.specialCount, result.totalLength, result.poolSize);
-});
-
-/* ------- Dark Mode Toggle ------- */
-const darkModeButton = document.getElementById('dark-mode-toggle');
-
-darkModeButton.addEventListener('click', function () {
-  document.body.classList.toggle('dark-mode');
-  document.querySelector('.container').classList.toggle('dark-mode');
-  document.querySelector('input').classList.toggle('dark-mode');
-  document.querySelector('button').classList.toggle('dark-mode');
-  document.getElementById('strength-bar-inner').classList.toggle('dark-mode');
-  this.classList.toggle('dark-mode');
-
-  this.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
