@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Password Strength</title>
+  <title>Password Strength Tester</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <!-- Title -->
-    <h1>Password Strength</h1>
+    <h1>Password Strength Tester</h1>
 
     <!-- Password Entry Box -->
     <input type="password" id="password" placeholder="Enter or generate a password" />
@@ -32,6 +32,7 @@
 
     <!-- Password Generator Section -->
     <div class="generator">
+      <!-- Password Length Row -->
       <div class="generator-row">
         <label for="length">Length: </label>
         <input type="number" id="length" min="1" value="12">
@@ -52,6 +53,7 @@
       </div>
     </div>
 
+    <!-- Detailed Breakdown of the Password -->
     <div id="details">
       <h3>Character Breakdown</h3>
       <p>Letters: <span id="letter-count">0</span></p>
@@ -62,9 +64,6 @@
       <p>Character set size: <span id="char-pool-size">0</span></p>
     </div>
   </div>
-
-  <!-- Dark Mode Toggle Button -->
-  <button id="dark-mode-toggle" class="dark-mode-toggle">🌙</button>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
