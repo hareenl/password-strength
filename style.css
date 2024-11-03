@@ -1,0 +1,175 @@
+/* Global Settings */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Title reduced */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Centering and styling checkbox */
+.show-password-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.show-hide {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#toggle-password {
+  margin-right: 8px;
+}
+
+/* Entropy and Strength */
+#entropy, #strength {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+#strength-value {
+  font-weight: bold;
+}
+
+/* Strength Bar */
+.strength-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+#strength-bar-inner {
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  background-color: red;
+  transition: width 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+/* Generator Inputs and Styling */
+.generator-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+label {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.generator input[type="number"] {
+  width: 3rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional Data */
+#details {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+#details h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Dark Mode Toggle Button ---- */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #f4f4f9;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* ---- Dark Mode Styles ---- */
+body.dark-mode {
+  background-color: #121212;
+  color: #e4e4e4;
+}
+
+.container.dark-mode {
+  background-color: #1d1d1d;
+  color: #e4e4e4;
+}
+
+input.dark-mode {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  color: #e4e4e4;
+}
+
+button.dark-mode {
+  background-color: #444;
+  color: #e4e4e4;
+}
+
+#strength-bar-inner.dark-mode {
+  background-color: teal;
+}
+
+.dark-mode-toggle.dark-mode {
+  background-color: #333;
+}
